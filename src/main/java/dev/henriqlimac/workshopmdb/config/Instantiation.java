@@ -10,6 +10,7 @@ import java.util.Arrays;
 
 @Configuration
 public class Instantiation implements CommandLineRunner {
+
     @Autowired
     private UserRepository userRepository;
 
