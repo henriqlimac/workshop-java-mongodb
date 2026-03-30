@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class SbmdbApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(SbmdbApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(SbmdbApplication.class, args);
+    }
 
 }
