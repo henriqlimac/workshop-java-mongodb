@@ -16,7 +16,9 @@ public class UserService {
     private UserRepository repository;
 
     public User fromDTO(UserDTO dto) {
-        return new User(dto.getName(), dto.getEmail());
+        User user = new User(dto.getDiscordId());
+        user.setProducts(dto.getProducts());
+        return user;
     }
 
     public List<User> findAll() {

@@ -1,20 +1,24 @@
 package dev.henriqlimac.workshopmdb.dto.user;
 
+import dev.henriqlimac.workshopmdb.domain.product.Product;
 import dev.henriqlimac.workshopmdb.domain.user.User;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class UserDTO {
 
     private String id;
-    private String name;
-    private String email;
+    private String discordId;
+    private List<Product> products = new ArrayList<>();
 
     public UserDTO() {
     }
 
     public UserDTO(User user) {
         this.id = user.getId();
-        this.name = user.getName();
-        this.email = user.getEmail();
+        this.discordId = user.getDiscordId();
+        this.products = user.getProducts();
     }
 
     public String getId() {
@@ -25,19 +29,19 @@ public class UserDTO {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getDiscordId() {
+        return discordId;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setDiscordId(String discordId) {
+        this.discordId = discordId;
     }
 
-    public String getEmail() {
-        return email;
+    public List<Product> getProducts() {
+        return products;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setProducts(List<Product> products) {
+        this.products = products;
     }
 }

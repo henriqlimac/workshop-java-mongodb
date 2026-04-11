@@ -3,42 +3,45 @@ package dev.henriqlimac.workshopmdb.domain.user;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
+import dev.henriqlimac.workshopmdb.domain.product.Product;
 
 @Document(collection = "user")
 public class User {
 
     @Id
     private String id;
-    private String name;
-    private String email;
+    private String discordId;
+
+    private List<Product> products = new ArrayList<>();
 
     public User() {
     }
 
-    public User(String name, String email) {
-        this.name = name;
-        this.email = email;
+    public User(String discordId) {
+        this.discordId = discordId;
     }
 
     public String getId() {
         return id;
     }
 
-    public String getName() {
-        return name;
+    public String getDiscordId() {
+        return discordId;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setDiscordId(String discordId) {
+        this.discordId = discordId;
     }
 
-    public String getEmail() {
-        return email;
+    public List<Product> getProducts() {
+        return products;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setProducts(List<Product> products) {
+        this.products = products;
     }
 
     @Override
