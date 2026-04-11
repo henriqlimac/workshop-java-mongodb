@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>dev.henriqlimac</groupId>
-    <artifactId>workshopmdb</artifactId>
+    <artifactId>DUPM</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>sbmdb</name>
     <description>sbmdb</description>

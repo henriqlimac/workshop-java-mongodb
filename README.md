@@ -1,4 +1,4 @@
-# Discord User Products Mapping API (SBMDB)
+# Discord User Products Mapping API (DUPM)
 
 ## Project Overview
 This is a microservice backend application built with **Spring Boot** and **MongoDB**. It serves as a service that receives a **Discord User ID** as a parameter and links one or more hardware/software **products** to that User. 
